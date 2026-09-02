@@ -89,8 +89,9 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
 .media-caption{font-size:13px; color:var(--ink-soft); margin-top:8px; font-style:italic;}
 @media (max-width:700px){.media-grid{grid-template-columns:1fr;}}
 </style>
+<link rel="stylesheet" href="../styles/case.css">
 </head>
-<body>
+<body class="case case-rappid">
 <nav>
   <div class="navwrap">
     <a class="nav-name" href="../main.html">Michelle Urrea</a>
@@ -104,7 +105,7 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
     <h1>Rappid Deploy</h1>
     <p class="subtitle">Turning years of manual Enterprise Content Management consulting into a self-serve, no-code product for non-technical users.</p>
     <div class="meta-row"><span class="tag">Enterprise Systems</span><span class="tag">v0 → Figma</span><span class="tag">Dev Collaboration</span></div>
-    <div class="meta-table"><div class="meta-item"><span>Role</span><p>UX Designer</p></div><div class="meta-item"><span>Company</span><p>Inside View Global</p></div><div class="meta-item"><span>Timeline</span><p>2025 &ndash; Present</p></div></div>
+    <div class="meta-table"><div class="meta-item"><span>Role</span><p>UX/UI Designer &amp; Project Manager</p></div><div class="meta-item"><span>Company</span><p>Inside View Global</p></div><div class="meta-item"><span>Timeline</span><p>2025 &ndash; Present</p></div><div class="meta-item"><span>Status</span><p>Closed beta</p></div></div>
   </div>
 </header>
 
@@ -135,7 +136,7 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
         <h3 class="sub-title">Design</h3>
         <p class="body-text">I used a two-stage process for every major flow — creating a project, managing permissions, customizing site structure, branding. First, I explored interaction patterns per use case with prompts in v0 to move fast and see options. Then I took the strongest direction into Figma and rebuilt it as a production-ready prototype, refining the details that actually matter for real use: error states, permission edge cases, navigation depth.</p>
         <h3 class="sub-title">Working With Development</h3>
-        <p class="body-text">Because the underlying system is complex, I worked closely with the development team throughout — checking technical feasibility against every screen before it moved to build, and adjusting flows when a "clean" UX idea didn't map to how the system actually worked underneath.</p>
+        <p class="body-text">I owned UX/UI and project management within a Scrum team of three developers, another UX/UI designer, and a marketing strategist. I ran backlog-grooming sessions with the CEO to prioritize product features, and worked closely with development throughout — checking technical feasibility against every screen before it moved to build, and adjusting flows when a "clean" UX idea didn't map to how the system actually worked underneath.</p>
         
   </div>
 </section>
@@ -146,18 +147,18 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
     <h2 class="section-title">The Work</h2>
     <p class="body-text">A working userflow diagram — mapped to clarify the happy path for the team as the product took shape, not meant to be a polished artifact:</p>
     <div class="media-block full">
-      <img src="../assets/img/flow.jpg" alt="Rappid Deploy userflow diagram" />
+<img src="../assets/img/Rapid/flow%20Rapid.jpg" alt="Rappid Deploy userflow diagram" />
       <p class="media-caption">Happy-path userflow: from dashboard through project creation, site settings, structure, navigation, and preview/deploy.</p>
     </div>
 
     <p class="body-text" style="margin-top:28px;">The reusable component definitions that became the design system's foundation:</p>
     <div class="media-grid">
       <div class="media-block">
-      <img src="../assets/img/ui-defs-1.jpg" alt="Rappid Deploy UI component definitions - form elements" />
+<img src="../assets/img/Rapid/UI%20rapid%20wireframes.jpg" alt="Rappid Deploy UI component definitions - form elements" />
         <p class="media-caption">Form container components, organisms, and real use-case examples.</p>
       </div>
       <div class="media-block">
-      <img src="../assets/img/ui-defs-2.jpg" alt="Rappid Deploy UI component definitions - modals and cards" />
+<img src="../assets/img/Rapid/UI%20Rapid.jpg" alt="Rappid Deploy UI component definitions - modals and cards" />
         <p class="media-caption">Modal and card components, documented with real use cases.</p>
       </div>
     </div>
@@ -169,10 +170,6 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
         <p class="media-caption">Creating a project — the entry point into the whole flow.</p>
       </div>
       <div class="media-block">
-      <video controls muted playsinline src="../assets/videos/permissions.mp4"></video>
-        <p class="media-caption">Configuring permissions — one of the heaviest, most technical parts of the system.</p>
-      </div>
-      <div class="media-block full">
       <video controls muted playsinline src="../assets/videos/structure.mp4"></video>
         <p class="media-caption">Site structure — translating the admin-dense backend into something navigable.</p>
       </div>
@@ -183,7 +180,7 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
 <section class="alt">
   <div class="wrap">
     <h2 class="section-title">Outcome</h2>
-    <p class="body-text">Internal validation over a 60-day period showed strong early signals, and the product moved into a closed beta pilot mixing SMB and enterprise clients.</p>
+    <p class="body-text">During a 60-day internal validation period, the product showed 10&ndash;15% productivity reclaimed and moved into a closed beta pilot mixing SMB and enterprise clients.</p>
     <div class="stat-grid">
       <div class="stat-card"><span class="num">10&ndash;15%</span><span class="label">Productivity reclaimed</span></div>
     </div>
@@ -193,7 +190,7 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
 <section>
   <div class="wrap">
     <h2 class="section-title">Reflection</h2>
-    <div class="reflection"><p>Rappid Deploy pushed me to think like a systems designer, not just a screen designer — every flow had a permission model and a technical constraint behind it. I didn't run formal usability testing on this one either; the validation was business-driven. As the beta expands to our signed LOI clients, I want to bring real usability testing into the loop before the next major release.</p></div>
+    <div class="reflection-layout"><img class="reflection-photo" src="../assets/img/michelle-urrea.jpg" alt="Michelle Urrea" /><div class="reflection"><p>Rappid Deploy pushed me to think like a systems designer, not just a screen designer — every flow had a permission model and a technical constraint behind it. I didn't run formal usability testing on this one either; the validation was business-driven. As the beta expands to our signed LOI clients, I want to bring real usability testing into the loop before the next major release.</p></div></div>
   </div>
 </section>
 

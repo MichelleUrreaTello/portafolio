@@ -100,8 +100,9 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
 .finding-cols li{margin-bottom:6px;}
 @media (max-width:700px){.media-grid, .ia-list, .finding-cols{grid-template-columns:1fr;}}
 </style>
+<link rel="stylesheet" href="../styles/case.css">
 </head>
-<body>
+<body class="case case-activity">
 <nav>
   <div class="navwrap">
     <a class="nav-name" href="../main.html">Michelle Urrea</a>
@@ -115,7 +116,7 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
     <h1>Activity Pass & Dynamic Itinerary</h1>
     <p class="subtitle">A full research-to-prototype process: understanding why travelers hesitate to book activities online, then designing a flexible solution around it.</p>
     <div class="meta-row"><span class="tag">User Research</span><span class="tag">MVP Prioritization</span><span class="tag">Usability Testing</span></div>
-    <div class="meta-table"><div class="meta-item"><span>Role</span><p>UX Researcher &amp; Designer</p></div><div class="meta-item"><span>Company</span><p>Despegar &mdash; Boarding Pass UX Program</p></div><div class="meta-item"><span>Timeline</span><p>2023</p></div></div>
+    <div class="meta-table"><div class="meta-item"><span>Role</span><p>UX Researcher &amp; Designer</p></div><div class="meta-item"><span>Company</span><p>Despegar &mdash; Boarding Pass UX Program</p></div><div class="meta-item"><span>Timeline</span><p>2023</p></div><div class="meta-item"><span>Status</span><p>Completed prototype</p></div></div>
   </div>
 </header>
 
@@ -138,7 +139,7 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
   <div class="wrap">
     <h2 class="section-title">Research</h2>
     <h3 class="sub-title">Interview Design</h3>
-    <p class="body-text">I designed a qualitative interview structured in five stages: introduction and welcome, icebreaker questions, general questions about past travel experiences, questions specific to activity planning, and a closing space for open comments. Sample questions included: "What motivates you to go online to plan your trip?", "How flexible are you when planning your trip's activities?", and "What do you take into account when building your travel itinerary?"</p>
+    <p class="body-text">I conducted five qualitative interviews using a guide structured in five stages: introduction and welcome, icebreaker questions, general questions about past travel experiences, questions specific to activity planning, and a closing space for open comments. Sample questions included: "What motivates you to go online to plan your trip?", "How flexible are you when planning your trip's activities?", and "What do you take into account when building your travel itinerary?"</p>
 
     <h3 class="sub-title">Who I Talked To</h3>
     <p class="body-text">Participants were 25&ndash;40 years old, based in Buenos Aires, traveling as couples with children. They travel at least once a year for 15+ days, and their routine is demanding &mdash; several worked medical shifts. Their goals: relax, experience new cultures, book their whole trip in one place, and find good deals.</p>
@@ -239,25 +240,19 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
         </ul>
       </div>
     </div>
-    <div class="media-block full" style="margin-top:28px;">
-      <img src="../assets/img/activitypass-ia.jpg" alt="Information architecture diagram (original, Spanish)" />
-      <p class="media-caption">Original working diagram (Spanish) &mdash; translated above for this write-up.</p>
-    </div>
   </div>
 </section>
 
 <section class="">
   <div class="wrap">
-    <h2 class="section-title">Userflow &amp; Wireframes</h2>
-    <p class="body-text">The full userflow, from entering the Activity Pass section through confirming an itinerary or letting the trip stay flexible:</p>
+    <h2 class="section-title">Prototype</h2>
+    <p class="body-text">The Figma prototype brings the intended flow to life: users can personalize their search, review an Activity Pass, build an itinerary, and confirm it while keeping the trip flexible.</p>
     <div class="media-block full">
-      <img src="../assets/img/activitypass-flow.jpg" alt="Activity Pass userflow diagram" />
-      <p class="media-caption">Userflow: search personalization, Activity Pass detail, dynamic itinerary building, and confirmation.</p>
-    </div>
-    <p class="body-text" style="margin-top:24px;">Prototype screens across the core flows &mdash; home, Activity Pass detail, itinerary builder, and destination/filter selection:</p>
-    <div class="media-block full">
-      <img src="../assets/img/activitypass-wireframes.jpg" alt="Activity Pass Figma wireframes" />
-      <p class="media-caption">Figma prototype screens used in usability testing.</p>
+      <video controls preload="metadata" playsinline aria-label="Activity Pass Figma prototype walkthrough">
+        <source src="../assets/videos/Activity%20Pass%20prototype.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+      <p class="media-caption">Figma prototype walkthrough: search personalization, Activity Pass detail, itinerary building, and confirmation.</p>
     </div>
   </div>
 </section>
@@ -265,6 +260,7 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
 <section class="alt">
   <div class="wrap">
     <h2 class="section-title">Usability Testing</h2>
+    <p class="body-text">I ran an exploratory usability evaluation with two participants to identify comprehension and flow issues in the prototype. The findings below informed iteration; they are directional rather than statistically conclusive.</p>
     <h3 class="sub-title">What Worked</h3>
     <ul style="padding-left:20px; margin-bottom:18px;">
       <li class="body-text" style="margin-bottom:8px;">The itinerary confirmation flow was completed successfully by all participants.</li>
@@ -277,20 +273,24 @@ footer .foot-bottom{font-family:'IBM Plex Mono', monospace; font-size:12px; colo
     <p class="body-text">2 of 2 users didn't understand the "dynamic itinerary" wording, and had questions about what exactly was included in the selected Activity Pass.</p>
     <h3 class="sub-title">What I Changed</h3>
     <p class="body-text">Following heuristic review, I iterated: added bottom navigation for system visibility, reordered the search flow to lead with destination and dates (matching the real-world mental model), added an "I haven't decided my dates yet" option for user control, added green confirmation states once a date was set, and added progress bars, close options, and "skip" CTAs to modals.</p>
+    <div class="media-grid" style="margin-top:24px;">
+      <div class="media-block"><img src="../assets/img/Activity%20Pass/Activity%20Pass%20Heuristicas.png" alt="Activity Pass prototype iterations for confirmation feedback and modal controls" /><p class="media-caption">Iterations supporting error prevention, visibility of system status, and user control.</p></div>
+      <div class="media-block"><img src="../assets/img/Activity%20Pass/Activity%20Pas%20Heuristicas.png" alt="Activity Pass prototype iterations for search hierarchy and bottom navigation" /><p class="media-caption">Iterations improving search hierarchy, flexibility, and navigation visibility.</p></div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <h2 class="section-title">Outcome</h2>
-    <p class="body-text">The project shipped as a complete deliverable: a functional prototype backed by a documented design system, validated with real research from the initial interview through the final usability pass — not built on assumptions.</p>
+    <p class="body-text">The project concluded as a complete design deliverable: a functional prototype backed by a documented design system, informed by qualitative interviews and iterated through an exploratory usability pass. It was a portfolio and training-program project, not a production launch.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <h2 class="section-title">Reflection</h2>
-    <div class="reflection"><p>This is the case study I'd point to as my strongest example of rigorous, end-to-end process — interviews through synthesis, prioritization, prototyping, and testing, all in one project. It's the bar I want to bring into a larger organization, where the stakes (and the complexity) are higher.</p></div>
+    <div class="reflection-layout"><img class="reflection-photo" src="../assets/img/michelle-urrea.jpg" alt="Michelle Urrea" /><div class="reflection"><p>This is the case study I'd point to as my strongest example of rigorous, end-to-end process — interviews through synthesis, prioritization, prototyping, and testing, all in one project. It's the bar I want to bring into a larger organization, where the stakes (and the complexity) are higher.</p></div></div>
     
   </div>
 </section>

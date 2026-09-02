@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+
+:root { --case-ink: #17272d; --case-paper: #f3f6f3; --case-muted: #587074; --case-line: #b8cbc4; --case-accent: #c44a36; --case-wash: #dce9e4; }
+body.case { background: var(--case-paper); color: var(--case-ink); font-family: 'DM Sans', sans-serif; }
+body.case-activity { --case-accent: #963a2c; --case-wash: #f1dfd4; --case-hero-image: url('../assets/img/Activity%20Pass.jpeg'); }
+body.case-chatbot { --case-accent: #14585c; --case-wash: #d9ece9; --case-hero-image: url('../assets/img/Chatbot.jpeg'); }
+body.case-hubernyx { --case-accent: #604077; --case-wash: #eadff0; --case-hero-image: url('../assets/img/Hubernyx/Hubernyx.jpeg'); }
+body.case-nubel { --case-accent: #765017; --case-wash: #f3e8cf; --case-hero-image: url('../assets/img/Nubel.jpeg'); }
+body.case-rappid { --case-accent: #1f527c; --case-wash: #dce9f2; --case-hero-image: url('../assets/img/Rapid.jpeg'); }
+
+body.case .wrap { max-width: 980px; padding: 0 28px; }
+body.case h1, body.case h2, body.case h3, body.case .nav-name { font-family: 'Fraunces', serif; font-weight: 600; letter-spacing: 0; }
+body.case .eyebrow, body.case .tag, body.case .meta-item span, body.case h3.sub-title, body.case .back-link, body.case .cs-nav a, body.case .btn, body.case .foot-bottom { font-family: 'DM Mono', monospace; letter-spacing: 0; }
+body.case nav { background: var(--case-paper); backdrop-filter: none; border-bottom: 1px solid var(--case-ink); }
+body.case .navwrap { height: 68px; }
+body.case .nav-name { font-size: 22px; }
+body.case .back-link { min-height: 44px; display: inline-flex; align-items: center; color: var(--case-ink); border-color: var(--case-ink); border-radius: 0; font-size: 14px; font-weight: 500; }
+body.case .back-link:hover { background: var(--case-ink); color: #fff; border-color: var(--case-ink); }
+body.case header.cshero { position: relative; isolation: isolate; overflow: hidden; padding: 96px 0 74px; background-color: var(--case-wash); background-image: var(--case-hero-image, none); background-position: center; background-size: cover; }
+body.case header.cshero::before { content: ''; position: absolute; inset: 0; z-index: 0; background: rgba(243, 246, 243, .88); }
+body.case header.cshero .wrap { position: relative; z-index: 1; }
+body.case .eyebrow, body.case .tag, body.case h3.sub-title, body.case .cs-nav a { color: var(--case-accent); font-size: 12px; line-height: 1.4; }
+body.case .cshero h1 { font-size: 76px; line-height: .94; max-width: 13ch; }
+body.case .cshero .subtitle { font-size: 18px; color: #3c5557; max-width: 52ch; }
+body.case .tag { background: rgba(243, 246, 243, .72); border: 1px solid var(--case-accent); border-radius: 0; padding: 5px 8px; }
+body.case .meta-table { border-color: var(--case-ink); gap: 14px; }
+@media (min-width: 701px) { body.case .meta-table { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+body.case .meta-item span { color: var(--case-muted); }
+body.case section { padding: 66px 0; }
+body.case section.alt { background: var(--case-wash); }
+body.case h2.section-title { font-size: 44px; line-height: 1; margin-bottom: 22px; }
+body.case h3.sub-title { font-size: 15px; text-transform: none; }
+body.case p.body-text { color: var(--case-ink); font-size: 17px; }
+body.case .stat-card { background: transparent; border: 1px solid var(--case-ink); border-radius: 0; }
+body.case .stat-card .num { color: var(--case-accent); font-family: 'Fraunces', serif; font-size: 34px; }
+body.case .reflection, body.case .quote-block { border-color: var(--case-accent); background: transparent; }
+body.case .reflection-layout { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 20px; align-items: start; margin-top: 8px; }
+body.case .reflection-photo { width: 84px; height: 84px; border: 1px solid var(--case-ink); border-radius: 50%; object-fit: cover; }
+body.case .reflection-layout .reflection { margin-top: 0; }
+body.case .visual-note { border-color: var(--case-accent); border-radius: 0; color: var(--case-muted); }
+body.case .media-block img, body.case .media-block video { border-color: var(--case-ink); border-radius: 0; }
+body.case .media-zoom { width: fit-content; min-height: 40px; display: inline-flex; align-items: center; gap: 7px; margin-top: 10px; padding: 7px 10px; border: 1px solid var(--case-ink); color: var(--case-ink); font-family: 'DM Mono', monospace; font-size: 12px; text-decoration: none; }
+body.case .media-zoom:hover { background: var(--case-ink); color: #fff; }
+body.case .media-caption { font-size: 14px; line-height: 1.45; color: #3c5557; }
+body.case-rappid .media-grid video { aspect-ratio: 16 / 10; object-fit: cover; }
+body.case .cs-nav { border-color: var(--case-ink); }
+body.case footer { background: var(--case-ink); color: #fff; text-align: left; }
+body.case footer p, body.case footer .foot-bottom { color: #d9e5df; }
+body.case footer .foot-bottom { border-color: #638078; }
+body.case .contact-links { justify-content: flex-start; }
+body.case .btn { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 0; font-size: 14px; font-weight: 500; line-height: 1.2; }
+body.case .btn-primary { background: var(--case-accent); color: #fff; }
+body.case .btn-primary:hover { background: #fff; color: var(--case-ink); }
+body.case .btn-ghost { border-color: #fff; color: #fff; }
+body.case .btn-ghost:hover { background: #fff; color: var(--case-ink); }
+body.case a:focus-visible, body.case button:focus-visible { outline: 3px solid #146d9d; outline-offset: 3px; }
+
+@media (max-width: 700px) {
+  body.case .wrap { padding: 0 20px; }
+  body.case .navwrap { height: auto; min-height: 64px; padding-top: 12px; padding-bottom: 12px; }
+  body.case .cshero h1 { font-size: 54px; }
+  body.case h2.section-title { font-size: 36px; }
+  body.case header.cshero { padding: 72px 0 58px; }
+  body.case section { padding: 52px 0; }
+  body.case .reflection-layout { grid-template-columns: 64px minmax(0, 1fr); gap: 14px; }
+  body.case .reflection-photo { width: 64px; height: 64px; }
+}
